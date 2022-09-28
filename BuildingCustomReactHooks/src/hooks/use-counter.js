@@ -1,6 +1,6 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
-const useCounter() => {
+const useCounter = () => {
     const [counter, setCounter] = useState(0);
 
     useEffect(() => {
@@ -11,7 +11,7 @@ const useCounter() => {
       return () => clearInterval(interval);
     }, []);
   
-  
+  return counter;
 }
 
 export default useCounter;
