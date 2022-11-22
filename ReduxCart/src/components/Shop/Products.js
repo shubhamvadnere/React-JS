@@ -34,7 +34,7 @@ const Products = (props) => {
               ))}
           </ul>
       </section>
-  );
+   );
 };
 
 export default Products;
